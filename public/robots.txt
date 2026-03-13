@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pacifique-irankunda.web.app/sitemap.xml

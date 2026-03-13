@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRANKUNDA Pacifique — Collaborators</title>
+    <meta name="description" content="Meet the amazing developers and designers IRANKUNDA Pacifique has worked with." />
+    <link rel="icon" href="assets/logo.png" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-primary': '#000000',
+                        'bg-secondary': '#0a0a0a',
+                        'accent-1': '#6c63ff',
+                        'accent-2': '#00d4ff',
+                        'accent-3': '#ff6b9d',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <!-- Keep old style.css for shared navbar/footer/hamburger styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Custom gradient text utility */
+        .gradient-text {
+            background: linear-gradient(135deg, #6c63ff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-shine::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: 0.5s;
+        }
+
+        .card-shine:hover::before {
+            left: 100%;
+        }
+
+        .avatar-ring {
+            background: linear-gradient(var(--bg, #0a0a0a), var(--bg, #0a0a0a)) padding-box,
+                linear-gradient(135deg, #6c63ff, #00d4ff) border-box;
+            border: 3px solid transparent;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white antialiased min-h-screen flex flex-col pt-20">
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="PI Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="collaborators.html" class="active">Collaborators</a></li>
+                <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main class="flex-1">
+        <section class="py-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <span class="font-mono text-sm text-accent-2 uppercase tracking-[3px] mb-3 block">// team</span>
+                    <h1 class="text-4xl md:text-5xl font-black gradient-text mb-4">Collaborators</h1>
+                    <p class="text-gray-400 text-lg max-w-xl mx-auto">Amazing developers and designers I've worked
+                        closely with — building digital experiences that matter.</p>
+                </div>
+
+                <!-- Collaborators Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Card: IRANKUNDA Pacifique (You) -->
+                    <div
+                        class="relative group bg-white/[0.03] border border-white/10 rounded-2xl p-8 text-center
+                                hover:border-accent-1 hover:-translate-y-2 transition-all duration-300 overflow-hidden card-shine
+                                shadow-[0_10px_30px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-20px_rgba(108,99,255,0.3)]">
+                        <!-- Badge -->
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-full bg-accent-1/20 text-[#6c63ff] font-mono">Lead</span>
+
+                        <div
+                            class="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden avatar-ring shadow-[0_0_20px_rgba(108,99,255,0.25)]">
+                            <img src="image 1.png" alt="IRANKUNDA Pacifique"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-1 text-white">IRANKUNDA Pacifique</h3>
+                        <p class="font-mono text-xs text-accent-2 mb-3 uppercase tracking-wider">Lead Full Stack
+                            Developer</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Lead technical architecture and
+                            front-to-back implementation for core products.</p>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#6c63ff] hover:border-[#6c63ff] transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://github.com/" target="_blank" aria-label="GitHub"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#6c63ff] hover:border-[#6c63ff] transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://pacifique-irankunda.web.app/" target="_blank" rel="noopener"
+                                class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#6c63ff] to-[#00d4ff] text-white text-sm font-semibold hover:opacity-90 transition-all">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Portfolio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card: Mugisha Arnold -->
+                    <div
+                        class="relative group bg-white/[0.03] border border-white/10 rounded-2xl p-8 text-center
+                                hover:border-accent-1 hover:-translate-y-2 transition-all duration-300 overflow-hidden card-shine
+                                shadow-[0_10px_30px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-20px_rgba(108,99,255,0.3)]">
+
+                        <div
+                            class="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden avatar-ring shadow-[0_0_20px_rgba(108,99,255,0.25)]">
+                            <img src="https://marnold-portfoli.web.app/Me.jpg" alt="Mugisha Arnold"
+                                class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                                onerror="this.src='marnold.jpeg'" />
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-1 text-white">Mugisha Arnold</h3>
+                        <p class="font-mono text-xs text-accent-2 mb-3 uppercase tracking-wider">Senior UI/UX Designer
+                        </p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Crafts premium user experiences and visual
+                            design systems for modern web apps.</p>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <a href="#" aria-label="LinkedIn"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#6c63ff] hover:border-[#6c63ff] transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#6c63ff] hover:border-[#6c63ff] transition-colors">
+                                <i data-lucide="twitter" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://marnold-portfoli.web.app/" target="_blank" rel="noopener"
+                                class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#6c63ff] to-[#00d4ff] text-white text-sm font-semibold hover:opacity-90 transition-all">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Portfolio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card: ISHEMA Christian -->
+                    <div
+                        class="relative group bg-white/[0.03] border border-white/10 rounded-2xl p-8 text-center
+                                hover:border-accent-1 hover:-translate-y-2 transition-all duration-300 overflow-hidden card-shine
+                                shadow-[0_10px_30px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-20px_rgba(108,99,255,0.3)]">
+
+                        <div
+                            class="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden avatar-ring shadow-[0_0_20px_rgba(245,158,11,0.25)]">
+                            <img src="https://ishema-christian.web.app/images/suit.jpg" alt="ISHEMA Christian"
+                                class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                                onerror="this.parentElement.style.background='linear-gradient(135deg,#f59e0b,#ef4444)'; this.style.display='none';" />
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-1 text-white">ISHEMA Christian</h3>
+                        <p class="font-mono text-xs text-accent-2 mb-3 uppercase tracking-wider">Backend Infrastructure
+                            Engineer</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Expert in microservices, database
+                            optimization, and high-load server architectures.</p>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <a href="#" aria-label="LinkedIn"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#00d4ff] hover:border-[#00d4ff] transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#00d4ff] hover:border-[#00d4ff] transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://ishema-christian.web.app/" target="_blank" rel="noopener"
+                                class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#f59e0b] to-[#ef4444] text-white text-sm font-semibold hover:opacity-90 transition-all">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Portfolio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card: Clever X -->
+                    <div
+                        class="relative group bg-white/[0.03] border border-white/10 rounded-2xl p-8 text-center
+                                hover:border-accent-1 hover:-translate-y-2 transition-all duration-300 overflow-hidden card-shine
+                                shadow-[0_10px_30px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-20px_rgba(108,99,255,0.3)]">
+
+                        <div
+                            class="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden avatar-ring shadow-[0_0_20px_rgba(139,92,246,0.3)]">
+                            <img src="https://clever-x-d3085.web.app/shyaka.jpg" alt="Prince Shyaka (Clever X)"
+                                class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                                onerror="this.parentElement.style.background='linear-gradient(135deg,#8b5cf6,#ec4899)'; this.style.display='none';" />
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-1 text-white">Clever X</h3>
+                        <p class="font-mono text-xs text-accent-2 mb-3 uppercase tracking-wider">Creative Developer</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Brings creative solutions and innovative
+                            ideas to every project with precision and flair.</p>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <a href="#" aria-label="LinkedIn"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#8b5cf6] hover:border-[#8b5cf6] transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#8b5cf6] hover:border-[#8b5cf6] transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://clever-x-d3085.web.app/" target="_blank" rel="noopener"
+                                class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#8b5cf6] to-[#ec4899] text-white text-sm font-semibold hover:opacity-90 transition-all">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Portfolio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card: Mugisha Aime Kevin -->
+                    <div
+                        class="relative group bg-white/[0.03] border border-white/10 rounded-2xl p-8 text-center
+                                hover:border-accent-1 hover:-translate-y-2 transition-all duration-300 overflow-hidden card-shine
+                                shadow-[0_10px_30px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-20px_rgba(108,99,255,0.3)]">
+
+                        <div
+                            class="w-28 h-28 rounded-full mx-auto mb-6 overflow-hidden avatar-ring shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                            <img src="https://mugisha-aime-kevin.web.app/d1.webp" alt="Mugisha Aime Kevin"
+                                class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                                onerror="this.parentElement.style.background='linear-gradient(135deg,#10b981,#3b82f6)'; this.style.display='none';" />
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-1 text-white">Mugisha Aime Kevin</h3>
+                        <p class="font-mono text-xs text-accent-2 mb-3 uppercase tracking-wider">Full Stack Developer
+                        </p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Delivers robust front-to-back solutions
+                            with a strong eye for performance and scalability.</p>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <a href="#" aria-label="LinkedIn"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#10b981] hover:border-[#10b981] transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub"
+                                class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#10b981] hover:border-[#10b981] transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://mugisha-aime-kevin.web.app/" target="_blank" rel="noopener"
+                                class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#10b981] to-[#3b82f6] text-white text-sm font-semibold hover:opacity-90 transition-all">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Portfolio
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logo.png" alt="PI Logo" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Building high-performance web applications and digital experiences with a
+                        focus on quality and innovation.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="skills.html">Web Development</a></li>
+                        <li><a href="skills.html">Backend Systems</a></li>
+                        <li><a href="skills.html">UI/UX Design</a></li>
+                        <li><a href="skills.html">QA Testing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Me</h4>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>pacifique@example.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="phone"></i>
+                        <span>+250 78X XXX XXX</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Kigali, Rwanda</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-socials">
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i
+                            data-lucide="linkedin"></i></a>
+                    <a href="https://x.com/" target="_blank" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i
+                            data-lucide="instagram"></i></a>
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i
+                            data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
